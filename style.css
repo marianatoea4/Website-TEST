@@ -28,10 +28,41 @@
   padding: 0 50px;
 }
 
+/*
 #navbar__logo {
   background-color: #ff8177;
   background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
   background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+}
+  */
+
+#navbar__logo {
+  display: flex; /* Așază conținutul (imaginea și textul) pe orizontală */
+  align-items: center; /* Aliniază imaginea și textul pe verticală */
+  text-decoration: none; /* Elimină sublinierea implicită a linkului */
+}
+
+.logo__image {
+  width: 40px; /* Dimensiunea imaginii (ajustează după preferințe) */
+  height: 40px;
+  margin-right: 10px; /* Spațiu între imagine și text */
+}
+
+.logo__text {
+  background-color: #ff8177;
+  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+  background-size: 100%;
+  background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;

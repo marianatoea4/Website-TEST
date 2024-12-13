@@ -127,6 +127,55 @@
   transition: all 0.3s ease;
 }
 
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #4837ff;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  min-height: 100px;
+}
+
+.social-icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  /*flex-wrap: wrap;*/
+}
+
+.social-icon__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 1rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.social-icon__link:hover {
+  transform: translateY(-8px);
+}
+
+.footer p {
+  color: #fff;
+  margin: 10px 0 10px 0;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.social-icon__img {
+  width: 25px;
+  height: 25px;
+}
+
 @media screen and (max-width: 960px) {
   .navbar__container {
     display: flex;

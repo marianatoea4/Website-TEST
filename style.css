@@ -176,6 +176,32 @@
   height: 25px;
 }
 
+@media screen and (max-width: 600px) {
+  .footer {
+    padding: 10px; /* Micșorează padding-ul pe dispozitive mici */
+  }
+
+  .social-icon {
+    flex-direction: column; /* Aranjează iconurile pe verticală */
+    align-items: center; /* Centrează iconurile pe ecrane mici */
+  }
+
+  .social-icon__img {
+    width: 20px; /* Micșorează dimensiunea iconurilor */
+    height: 20px;
+  }
+
+  .footer p {
+    font-size: 0.7rem; /* Font mai mic pentru textul copyright */
+    margin: 5px 0; /* Micșorează marginile paragrafului */
+  }
+
+  .social-icon__link {
+    font-size: 0.9rem; /* Micșorează dimensiunea fontului pe linkuri */
+    margin: 5px 0; /* Micșorează marginile dintre iconuri */
+  }
+}
+
 @media screen and (max-width: 960px) {
   .navbar__container {
     display: flex;
